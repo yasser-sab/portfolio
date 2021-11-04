@@ -952,10 +952,15 @@ section, article {
 /* Image */
 .image {
   display: inline-block;
-  border: 0; }
+  border: 0;
+  height: 10em;
+  overflow: hidden; }
   .image img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    transition: transform .2s ease-out; }
+    .image img:hover {
+      transform: scale(1.2); }
   .image.avatar48 {
     width: 90px;
     height: 90px;
